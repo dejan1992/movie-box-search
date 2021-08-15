@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Movie Search</title>
+</head>
+
+<body>
+  <section id="header">
+    <nav class="flex">
+      <h1 id="logo"><i class="fas fa-film"></i> Movie Box</h1>
+      <p id="logo"><a href="index.html">HOME</a><a href="about.html">ABOUT</a></p>
+    </nav>
+    <div class="searhText">
+      <h1 class="title">Search Movie By Title</h1>
+      <form class="form">
+        <input class="input-title" type="text" name="text" autocomplete="off" required>
+        <label for="name" class="label-name"><span class="content-name">Start typing</span></label>
+        <!-- <input class="btn search-btn" type="submit" value="Search"> -->
+      </form>
+    </div>
+  </section>
+
+
+  <section class="results flex"></section>
+  <div class="movie-details">
+
+    <div class="movie-details-flex">
+      <div class="movie-details-poster"></div>
+      <div class="right">
+        <h1 class="details-title"></h1>
+        <h3 class="details-release_date"></h3>
+        <p class="movie-vote_average"></p>
+        <p class="movie-status"></p>
+        <p class="movie-genres"></p>
+        <p class="details-budget"> </p>
+        <p class="movie-revenue"></p>
+        <p class="movie-runtime"></p><br>
+        <p>Plot:</p>
+        <p class="movie-overview">A ticking-time-bomb insomniac and a slippery soap salesman channel primal male
+          aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\"
+          forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward
+          oblivion.</p>
+        <a class="movie-close" href="#"><i class="far fa-times-circle fa-2x"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
