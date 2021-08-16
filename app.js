@@ -78,7 +78,7 @@ input.addEventListener("keyup", () => {
             results.appendChild(movieBox);
 
 
-            // NEW FETCH - fetch movie detais when movi is clicked
+            // NEW FETCH - fetch movie detais when movie is clicked
 
             // Movie details
             movieBox.addEventListener("click", function () {
@@ -87,7 +87,7 @@ input.addEventListener("keyup", () => {
                 .then(data1 => {
                   const details = data1;
                   movieDetails.style.display = "block";
-                  document.body.style.overflow = "hidden";
+                  // document.body.style.overflow = "hidden";
 
                   // adding data to elements
 
@@ -121,7 +121,7 @@ input.addEventListener("keyup", () => {
                   // Remove movie-details
                   movieClose.addEventListener("click", () => {
                     movieDetails.style.display = "none";
-                    document.body.style.overflow = "visible";
+                    // document.body.style.overflow = "visible";
                     pictureLink1.remove();
                   })
 
