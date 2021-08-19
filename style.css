@@ -127,6 +127,7 @@ transition: all 0.3s ease;
 /* Results */
 
 .results{
+  width: 100%;
   position: absolute;
   top: 300px;
   color: #fff;
@@ -186,7 +187,9 @@ transition: all 0.3s ease;
 
 .message{
   position: absolute;
-  top: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2rem;
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
   color: #fff;
