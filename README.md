@@ -5,4 +5,4 @@
 This is site for searching movie details by title.
 API used : https://www.themoviedb.org
 
-You should lick on movie poster to see details.
+You should click on movie poster to see details.
