@@ -170,7 +170,7 @@ async function getMovies() {
 
 
       } else {
-        if (data.total_results === 0) {
+        if (json.total_results === 0) {
           results.append(createElement("p", `No results for "${input.value}"`, "message"));
         }
       }
