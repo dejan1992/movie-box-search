@@ -207,7 +207,6 @@ transition: all 0.3s ease;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.5s all ease;  
-
 }
 .movie-details-poster{
 background: url("./no image.jpg") no-repeat center center/cover;
@@ -271,6 +270,7 @@ transition: 0.5s all ease;
 transform: scale(1.1);
 }
 
+/* Loader */
 #loader{
   color: white;
   display: flex;
@@ -284,6 +284,17 @@ transform: scale(1.1);
   width: 100%;
   height: 100%;
 }
+
+.disapear{
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish{
+  100%{
+    opacity: 0;visibility: hidden;
+  }
+}
+
 
 #loader-img{
 width: 80px;

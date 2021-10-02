@@ -1,5 +1,6 @@
 const loader = document.getElementById("loader");
 
 window.addEventListener("load", () => {
-  loader.style.display = "none";
+  loader.classList.add("disapear");
+  // loader.style.display = "none";
 })
