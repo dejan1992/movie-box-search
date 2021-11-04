@@ -1,5 +1,4 @@
 *{
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,9 +10,15 @@ html, body{
   background: rgb(0, 0, 0);
 }
 
+/* when movie-details are opend -- hide scroll */
+.stop-scrolling {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 
 #header{
-height: 101vh; 
+  height: 100vh; 
   background: url("/img/background.jpg") no-repeat bottom center/cover;
 }
 
@@ -207,6 +212,7 @@ transition: all 0.3s ease;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.5s all ease;  
+  overflow-y: auto;
 }
 .movie-details-poster{
 background: url("./no image.jpg") no-repeat center center/cover;
@@ -226,6 +232,7 @@ transition: 0.5s all ease;
   transform: translate(-30px, 30px);
   border: 1px solid rgb(255, 255, 255);
   transition: 0.5s all ease;
+
 }
 
 .movie-details-poster:hover{

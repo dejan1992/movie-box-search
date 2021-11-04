@@ -14,6 +14,7 @@ const movieGenres = document.querySelector(".movie-genres");
 const movieStatus = document.querySelector(".movie-status");
 const movieRuntime = document.querySelector(".movie-runtime");
 const movieOverview = document.querySelector(".movie-overview");
+const body = document.querySelector("body");
 
 let movies;
 
@@ -100,7 +101,6 @@ async function getMovies() {
             .then(data1 => {
               const details = data1;
               movieDetails.style.display = "block";
-              // document.body.style.overflow = "hidden";
 
               // adding data to elements
 
@@ -130,12 +130,16 @@ async function getMovies() {
               pictureLink1.classList.add("movie-details-poster");
               movieDetailsPoster.appendChild(pictureLink1);
 
+              // remove scroll
+              body.classList.add('stop-scrolling');
 
               // Remove movie-details
               movieClose.addEventListener("click", () => {
                 movieDetails.style.display = "none";
-                // document.body.style.overflow = "visible";
                 pictureLink1.remove();
+
+                // add scroll
+                body.classList.remove('stop-scrolling')
               })
 
               // REVENUE
