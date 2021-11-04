@@ -120,9 +120,13 @@ async function getMovies() {
               } else {
                 movieVoteAverage.innerHTML = `Rating: ${movies[i].vote_average}`
               }
-
               // GENRES
-              movieGenres.innerHTML = `Genres: ${details.genres[0].name}`;
+
+              try {
+                movieGenres.innerHTML = `Genres: ${details.genres[0].name}`;
+              } catch (e) {
+                //Movie with no all details
+              }
 
               // POSTER
               const pictureLink1 = document.createElement("img");
