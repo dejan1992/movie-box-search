@@ -70,7 +70,7 @@ async function getMovies() {
         if (movies[i].vote_average == 0) {
           movieBox.appendChild(createElement("p", '<img src="./star.png"> no rate', "vote"))
         } else {
-          movieBox.appendChild(createElement("p", `<img src="./star.png"> ${movies[i].vote_average}`, "vote"))
+          movieBox.appendChild(createElement("p", `<img src="./star.png"> ${(movies[i].vote_average).toFixed(1)}`, "vote"))
         }
 
         //Create movie title
@@ -118,7 +118,7 @@ async function getMovies() {
               if (movies[i].vote_average == 0) {
                 movieVoteAverage.innerHTML = "Rating: -";
               } else {
-                movieVoteAverage.innerHTML = `Rating: ${movies[i].vote_average}`
+                movieVoteAverage.innerHTML = `Rating: ${(movies[i].vote_average).toFixed(1)}`
               }
               // GENRES
 
